@@ -22,6 +22,22 @@ const projects = [
     description: "An Online Bisaya-based programming language compiler for arithmetic parsed.",
     technologies: ["Lex and Yacc", "API Routing", "NextJS"],
     link: "https://github.com/shin-default123/Bisdak"
+  },
+  {
+    id: 4,
+    image: "/river.jpg",
+    title: "The River News",
+    description: "Youth-run reporting, seeking to inform and inspire in our corner of Mindanao and beyond.",
+    technologies: ["NextJS", "Supabase"],
+    link: "https://the-river-news.live/"
+  },
+  {
+    id: 5,
+    image: "/ecommerce.jpg",
+    title: "Thrift Marias",
+    description: "E-commerce demo webpage for a local thrift store in Facebook, featuring product listings and shopping functionality.",
+    technologies: ["NextJS", "Supabase"],
+    link: "https://thrift-marias.vercel.app/"
   }
 ]
 
