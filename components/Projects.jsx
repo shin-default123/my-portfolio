@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     image: "/bike.png", 
-    title: "CSU Rent-A-Bike System",
+    title: "CSU Rent-A-Bike System v1.0",
     description: "Full-stack web-based application designed to modernize and streamline the bike rental process at Caraga State University (CSU) as part of the University Sustainable Mobility Program (USMP).",
     technologies: ["NextJS", "Supabase", "Clerk"],
     link: "https://github.com/shin-default123/CSU-Borrow-Bike"
@@ -28,7 +28,7 @@ const projects = [
     image: "/river.jpg",
     title: "The River News",
     description: "Youth-run reporting, seeking to inform and inspire in our corner of Mindanao and beyond.",
-    technologies: ["NextJS", "Supabase"],
+    technologies: ["NextJS", "Supabase", "Google Adsense"],
     link: "https://the-river-news.live/"
   },
   {
@@ -38,6 +38,22 @@ const projects = [
     description: "E-commerce demo webpage for a local thrift store in Facebook, featuring product listings and shopping functionality.",
     technologies: ["NextJS", "Supabase"],
     link: "https://thrift-marias.vercel.app/"
+  },
+    {
+    id: 6,
+    image: "/csu.png",
+    title: "CSU Bike Share Mobile App",
+    description: "Official Bike-Sharing Platform for Caraga State University.",
+    technologies: ["React", "Supabase", "Mapbox API", "Capacitor-BG Geolocation API"],
+    link: "https://www.csubikeshare.app/"
+  },
+      {
+    id: 7,
+    image: "/TheraSpeech.png",
+    title: "TheraSpeech",
+    description: "A mobile application designed to assist children with speech delays, providing a user-friendly interface for communication and therapy exercises.",
+    technologies: ["Unity", "C#", "Supabase", "Mixamo Animations", "Vuforia AR", "Google Api", "Apple Xcode"],
+    link: "https://www.csubikeshare.app/"
   }
 ]
 
