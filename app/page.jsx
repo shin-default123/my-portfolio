@@ -21,11 +21,11 @@ const defaultConfig = {
   name: "Sheen Milger Ochavo",
   tagline: "AI/ML & Full-Stack Developer",
   about_heading: "About Me",
-  about_text: "I'm a passionate computer science student with a focus on full-stack development and machine learning. I love building innovative solutions that solve real-world problems and constantly learning new technologies.An ambitious and solution-driven Computer Science student, I combine technical expertise with a passion for social and environmental initiatives. With hands-on experience in project management, software development, and community engagement, I successfully led and contributed to projects that promote sustainable development and eco-friendly practices.",
-  projects_heading: "Featured Projects",
-  experience_heading: "Work Experience",
-  skills_heading: "Technical Skills",
-  contact_heading: "Let's Connect",
+  about_text: "I'm a passionate computer science student with a focus on full-stack development and machine learning. I love building innovative solutions that solve real-world problems and constantly learning new technologies.  An ambitious and solution-driven Computer Science student, I combine technical expertise with a passion for social and environmental initiatives. With hands-on experience in project management, software development, and community engagement, I successfully led and contributed to projects that promote sustainable development and eco-friendly practices.",
+  projects_heading: "Featured Architecture & Projects",
+  experience_heading: "Milestones & Experience",
+  skills_heading: "Technical Arsenal",
+  contact_heading: "Initialize Connection",
   contact_text: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision."
 }
 
@@ -33,7 +33,6 @@ export default function Home() {
   const [config, setConfig] = useState(defaultConfig)
 
   useEffect(() => {
-    // Apply CSS variables
     document.documentElement.style.setProperty('--primary-color', config.primary_color)
     document.documentElement.style.setProperty('--secondary-color', config.secondary_color)
     document.documentElement.style.fontFamily = config.font_family
@@ -46,7 +45,7 @@ export default function Home() {
 
   return (
     <main 
-      className="w-full min-h-screen overflow-auto"
+      className="w-full min-h-screen overflow-x-hidden relative selection:bg-blue-500 selection:text-white"
       style={{ 
         backgroundColor: config.background_color,
         color: config.text_color,
@@ -54,8 +53,14 @@ export default function Home() {
         fontSize: `${config.font_size}px`
       }}
     >
-      <div className="code-symbol top-[10%] left-[10%]">&lt;/&gt;</div>
-      <div className="code-symbol bottom-[10%] right-[10%]">{'{}'}</div>
+      {/* Creative Background Grid Overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-[0.03]"
+        style={{
+          backgroundImage: `linear-gradient(to right, ${config.text_color} 1px, transparent 1px), linear-gradient(to bottom, ${config.text_color} 1px, transparent 1px)`,
+          backgroundSize: '40px 40px'
+        }}
+      />
       
       <Navbar config={config} />
       <Hero config={config} updateConfig={updateConfig} />
