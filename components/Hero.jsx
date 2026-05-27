@@ -72,7 +72,7 @@ export default function Hero({ config }) {
               <p>]</p>
               <br />
               <p>status = sheen.get_current_focus()</p>
-              <p>print(<span className="text-cyan-400">f"Active State: {status}"</span>)</p>
+<p>print(<span className="text-cyan-400">{'f"Active State: {status}"'}</span>)</p>
               <p className="text-gray-500">&gt;&gt; Active State: Building tools for accessibility & green computing.</p>
             </div>
           </div>
